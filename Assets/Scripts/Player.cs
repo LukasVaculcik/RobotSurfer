@@ -53,4 +53,11 @@ public class NewBehaviourScript : MonoBehaviour
             GFX.localScale = new Vector3(GFX.localScale.x, 1f, GFX.localScale.z);
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.transform.tag == "Obstacle") {
+            Destroy(gameObject);
+        }
+    }
 }
