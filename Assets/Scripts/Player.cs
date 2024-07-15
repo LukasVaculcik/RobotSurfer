@@ -58,6 +58,7 @@ public class NewBehaviourScript : MonoBehaviour
     {
         if (collision.transform.tag == "Obstacle") {
             Destroy(gameObject);
+            GameManager.Instance.GameOver();
         }
     }
 }
