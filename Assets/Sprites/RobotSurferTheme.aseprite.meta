@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 16064d9dc8f8c4a40843d6d1057978f9
+guid: a275a95315ea3a386914881c799e5c8a
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -35,7 +35,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 32
+    spritePixelsToUnits: 100
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -97,7 +97,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638568149550107620
+  platformSettingsDirtyTick: 0
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -121,18 +121,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Surfer
+  - name: RobotSurferTheme_Frame_0
     originalName: 
-    pivot: {x: 0.57777774, y: -0.3508772}
+    pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 45
-      height: 57
-    spriteID: 2e12d8067d85e22468392fc16589fe19
+      width: 640
+      height: 209
+    spriteID: 2984f83f5d693f92a871f0da0445ada6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -141,18 +141,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: Surfer_Frame_1
+  - name: RobotSurferTheme_Frame_1
     originalName: 
-    pivot: {x: 0.57777774, y: -0.38596493}
+    pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 69
-      width: 45
-      height: 57
-    spriteID: 39cc7fe37d3be4f40a64ea633729d724
+      y: 221
+      width: 640
+      height: 209
+    spriteID: 15a4893e9cd28665983de038cbfeecb3
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -160,99 +160,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 69}
-  - name: Surfer_Frame_2
+    uvTransform: {x: 4, y: 221}
+  - name: RobotSurferTheme_Frame_2
     originalName: 
-    pivot: {x: 0.57777774, y: -0.42857143}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 57
-      y: 4
-      width: 45
-      height: 56
-    spriteID: 74c69360055e504449a47012f43dcdd0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 57, y: 4}
-  - name: Surfer_Frame_3
-    originalName: 
-    pivot: {x: 0.57777774, y: -0.46296296}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 57
-      y: 196
-      width: 45
-      height: 54
-    spriteID: 86914c4e2d6d0e94ea45d0c13a5ac80e
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 57, y: 196}
-  - name: Surfer_Frame_4
-    originalName: 
-    pivot: {x: 0.57777774, y: -0.42857143}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 57
-      y: 68
-      width: 45
-      height: 56
-    spriteID: b1e6a197265fbff4b8cc0a7391e65d9e
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 57, y: 68}
-  - name: Surfer_Frame_5
-    originalName: 
-    pivot: {x: 0.57777774, y: -0.41071427}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 57
-      y: 132
-      width: 45
-      height: 56
-    spriteID: 407b759e1afa11b46968f40111b583ca
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 57, y: 132}
-  - name: Surfer_Frame_6
-    originalName: 
-    pivot: {x: 0.57777774, y: -0.36842105}
+    pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 134
-      width: 45
-      height: 57
-    spriteID: bb8332f327f49924c9399a4cf2660950
+      y: 438
+      width: 640
+      height: 209
+    spriteID: 650e52a1eb0843d0a8a8158f3f92ea4b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -260,107 +180,163 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 134}
+    uvTransform: {x: 4, y: 438}
+  - name: RobotSurferTheme_Frame_3
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 655
+      width: 640
+      height: 209
+    spriteID: 0684cb1899914282d85c35c55ce97799
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 655}
+  - name: RobotSurferTheme_Frame_4
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 872
+      width: 640
+      height: 209
+    spriteID: 3ca3beaf6dc1b02f7b4d2b03255e6151
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 872}
+  - name: RobotSurferTheme_Frame_5
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1089
+      width: 640
+      height: 209
+    spriteID: 118f886babfafcc18b3da7ab01d84e81
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1089}
+  - name: RobotSurferTheme_Frame_6
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1306
+      width: 640
+      height: 209
+    spriteID: d66bd59e3866e8889b58304e46813b8d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1306}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -913952591
-    name: Surfer
+    guid: 739744342
+    name: RobotSurferTheme
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Surfer_Frame_0
+    - name: RobotSurferTheme_Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 14
-        y: 20
-        width: 45
-        height: 57
-      spriteId: 2e12d8067d85e22468392fc16589fe19
-    - name: Surfer_Frame_1
+        x: 0
+        y: 0
+        width: 640
+        height: 209
+      spriteId: 2984f83f5d693f92a871f0da0445ada6
+    - name: RobotSurferTheme_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
-        x: 14
-        y: 22
-        width: 45
-        height: 57
-      spriteId: 39cc7fe37d3be4f40a64ea633729d724
-    - name: Surfer_Frame_2
+        x: 0
+        y: 0
+        width: 640
+        height: 209
+      spriteId: 15a4893e9cd28665983de038cbfeecb3
+    - name: RobotSurferTheme_Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
-        x: 14
-        y: 24
-        width: 45
-        height: 56
-      spriteId: 74c69360055e504449a47012f43dcdd0
-    - name: Surfer_Frame_3
+        x: 0
+        y: 0
+        width: 640
+        height: 209
+      spriteId: 650e52a1eb0843d0a8a8158f3f92ea4b
+    - name: RobotSurferTheme_Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
-        x: 14
-        y: 25
-        width: 45
-        height: 54
-      spriteId: 86914c4e2d6d0e94ea45d0c13a5ac80e
-    - name: Surfer_Frame_4
+        x: 0
+        y: 0
+        width: 640
+        height: 209
+      spriteId: 0684cb1899914282d85c35c55ce97799
+    - name: RobotSurferTheme_Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
-        x: 14
-        y: 24
-        width: 45
-        height: 56
-      spriteId: b1e6a197265fbff4b8cc0a7391e65d9e
-    - name: Surfer_Frame_5
+        x: 0
+        y: 0
+        width: 640
+        height: 209
+      spriteId: 3ca3beaf6dc1b02f7b4d2b03255e6151
+    - name: RobotSurferTheme_Frame_5
       frameIndex: 5
       additiveSortOrder: 0
       cellRect:
-        x: 14
-        y: 23
-        width: 45
-        height: 56
-      spriteId: 407b759e1afa11b46968f40111b583ca
-    - name: Surfer_Frame_6
+        x: 0
+        y: 0
+        width: 640
+        height: 209
+      spriteId: 118f886babfafcc18b3da7ab01d84e81
+    - name: RobotSurferTheme_Frame_6
       frameIndex: 6
       additiveSortOrder: 0
       cellRect:
-        x: 14
-        y: 21
-        width: 45
-        height: 57
-      spriteId: bb8332f327f49924c9399a4cf2660950
+        x: 0
+        y: 0
+        width: 640
+        height: 209
+      spriteId: d66bd59e3866e8889b58304e46813b8d
     linkedCells: []
     parentIndex: -1
-  platformSettings:
-  - name: DefaultTexturePlatform
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Standalone
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
+  platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 80, y: 96}
+  canvasSize: {x: 640, y: 360}
