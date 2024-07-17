@@ -5,7 +5,7 @@ using UnityEngine;
 public class NewBehaviourScript : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D rigidBody;
-    [SerializeField] private Transform GFX;
+    // [SerializeField] private Transform GFX;
     [SerializeField] private float jumpForce = 10f;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Transform feetPosition;
@@ -41,24 +41,29 @@ public class NewBehaviourScript : MonoBehaviour
         }
 
         // Crouching
-        if (isGrounded && Input.GetButton("Crouch")) {
-            GFX.localScale = new Vector3(GFX.localScale.x, crouchHeight, GFX.localScale.z);
+        // if (isGrounded && Input.GetButton("Crouch")) {
+        //     GFX.localScale = new Vector3(GFX.localScale.x, crouchHeight, GFX.localScale.z);
 
-            if (isJumping) {
-                GFX.localScale = new Vector3(GFX.localScale.x, 1f, GFX.localScale.z);
-            }
-        }
+        //     if (isJumping) {
+        //         GFX.localScale = new Vector3(GFX.localScale.x, 1f, GFX.localScale.z);
+        //     }
+        // }
 
-        if (Input.GetButtonUp("Crouch")) {
-            GFX.localScale = new Vector3(GFX.localScale.x, 1f, GFX.localScale.z);
-        }
+        // if (Input.GetButtonUp("Crouch")) {
+        //     GFX.localScale = new Vector3(GFX.localScale.x, 1f, GFX.localScale.z);
+        // }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.transform.tag == "Obstacle") {
+        if (other.transform.CompareTag("Obstacle")) {
             Destroy(gameObject);
             GameManager.Instance.GameOver();
+        }
+
+        if (other.transform.CompareTag("Loot")) {
+            Destroy(other.gameObject);
+            GameManager.Instance.currentScore += 10;
         }
     }
 }
