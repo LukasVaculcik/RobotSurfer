@@ -21,7 +21,7 @@ public class NewBehaviourScript : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(feetPosition.position, distanceToGround, groundLayer);
 
         // Jumping
-        if (isGrounded && Input.GetButtonDown("Jump")) {
+        if (Input.GetButtonDown("Jump")) {
             isJumping = true;
             rigidBody.velocity = Vector2.up * jumpForce;
         }
