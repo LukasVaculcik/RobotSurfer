@@ -6,38 +6,22 @@ public class NewBehaviourScript : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D rigidBody;
     // [SerializeField] private Transform GFX;
-    [SerializeField] private float jumpForce = 10f;
+    [SerializeField] private float moveForce = 10f;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Transform feetPosition;
     [SerializeField] private float distanceToGround = 0.25f;
     [SerializeField] private float jumpTime = 0.3f;
     [SerializeField] private float crouchHeight = 0.5f;
-    private bool isGrounded = false;
-    private bool isJumping = false;
-    private float jumpTimer;
 
     private void Update()
     {
-        isGrounded = Physics2D.OverlapCircle(feetPosition.position, distanceToGround, groundLayer);
-
-        // Jumping
-        if (Input.GetButtonDown("Jump")) {
-            isJumping = true;
-            rigidBody.velocity = Vector2.up * jumpForce;
+        // Movement
+        if (Input.GetKeyDown(KeyCode.UpArrow)) {
+            rigidBody.velocity = Vector2.up * moveForce;
         }
 
-        if (isJumping && Input.GetButton("Jump")) {
-            if (jumpTimer < jumpTime) {
-                rigidBody.velocity = Vector2.up * jumpForce;
-                jumpTimer += Time.deltaTime;
-            } else {
-                isJumping = false;
-            }
-        }
-
-        if (Input.GetButtonUp("Jump")) {
-            isJumping = false;
-            jumpTimer = 0;
+        if (Input.GetKeyDown(KeyCode.DownArrow)) {
+            rigidBody.velocity = Vector2.down * moveForce;
         }
 
         // Crouching

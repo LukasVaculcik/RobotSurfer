@@ -20,13 +20,9 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (isPlaying) {
-            currentScore += Time.deltaTime;
-        }
-
-        if (Input.GetKeyDown("k")) {
-            isPlaying = true;
-        }
+        // if (isPlaying) {
+        //     currentScore += Time.deltaTime;
+        // }
     }
 
     public void GameOver() {
