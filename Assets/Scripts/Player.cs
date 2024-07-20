@@ -6,23 +6,32 @@ public class NewBehaviourScript : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D rigidBody;
     // [SerializeField] private Transform GFX;
-    [SerializeField] private float moveForce = 10f;
+    [SerializeField] private float moveForceUp = 10f;
+    [SerializeField] private float moveForceDown = 5f;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Transform feetPosition;
     [SerializeField] private float distanceToGround = 0.25f;
-    [SerializeField] private float jumpTime = 0.3f;
+    [SerializeField] private float moveTime = 0.3f;
     [SerializeField] private float crouchHeight = 0.5f;
+
+    // private bool isGrounded = false;
+    private bool isMovingUp = false;
+    private bool isMovingDown = false;
+    private float moveTimer;
 
     private void Update()
     {
-        // Movement
+        // Move up
         if (Input.GetKeyDown(KeyCode.UpArrow)) {
-            rigidBody.velocity = Vector2.up * moveForce;
+            rigidBody.velocity = Vector2.up * moveForceUp;
         }
 
+        // Move down
         if (Input.GetKeyDown(KeyCode.DownArrow)) {
-            rigidBody.velocity = Vector2.down * moveForce;
+            rigidBody.velocity = Vector2.down * moveForceDown;
         }
+
+        // isGrounded = Physics2D.OverlapCircle(feetPosition.position, distanceToGround, groundLayer);
 
         // Crouching
         // if (isGrounded && Input.GetButton("Crouch")) {
